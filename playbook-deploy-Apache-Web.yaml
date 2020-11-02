@@ -1,0 +1,24 @@
+---
+- name: install httpd
+  hosts: apache_server
+  become: yes
+  tasks:
+    - name: install httpd*
+      yum: name=httpd state=latest
+    - name: Start Apache instance
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+    - name: remove firewall
+      package:
+        name: firewalld
+        state: absent
+    - name: Copy html file to Apache web directory
+      copy:
+        dest: /var/www/html
+        src: /var/lib/jenkins/workspace/Deploy_Apache_Website/index.html
+    - name: Copy CSS file to Apache web directory
+      copy:
+        dest: /var/www/html
+        src: /var/lib/jenkins/workspace/Deploy_Apache_Website/style.css

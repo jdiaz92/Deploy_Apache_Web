@@ -1,0 +1,7 @@
+-
+ name: Check connectivity to target servers
+ hosts: apache_server
+ become: yes
+ tasks:
+  - name: Ping test
+    ping:
