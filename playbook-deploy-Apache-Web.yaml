@@ -22,3 +22,11 @@
       copy:
         dest: /var/www/html
         src: /var/lib/jenkins/workspace/Deploy Apache Web Yaml/style.css
+    - name: Copy Yaml script jpg file to Apache web directory
+      copy:
+        dest: /var/www/html
+        src: /var/lib/jenkins/workspace/Deploy Apache Web Yaml/Jenkins_YAML_Script.jpg
+    - name: Copy Ansible script jpg file to Apache web directory
+      copy:
+        dest: /var/www/html
+        src: /var/lib/jenkins/workspace/Deploy Apache Web Yaml/Dep_App_Ansible_YAML.jpg
