@@ -1,2 +1,2 @@
-apache_server ansible_host=jdiaz@10.0.0.58 ansible_connection=ssh ansible_ssh_pass=@mb1Tion ansible_become_pass=@mb1Tion
+apache_server ansible_host=jdiaz@10.0.0.53 ansible_connection=ssh ansible_ssh_pass=@mb1Tion ansible_become_pass=@mb1Tion
 jenkins_server ansible_host=jdiaz@10.0.0.192 ansible_connection=ssh ansible_ssh_pass=@mb1Tion ansible_become_pass=@mb1Tion
