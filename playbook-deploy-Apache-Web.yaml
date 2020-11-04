@@ -17,16 +17,16 @@
     - name: Copy html file to Apache web directory
       copy:
         dest: /var/www/html
-        src: /var/lib/jenkins/workspace/Deploy Apache YAML Script 2/index.html
+        src: /var/lib/jenkins/workspace/Deploy Apache YAML Script Prod/index.html
     - name: Copy CSS file to Apache web directory
       copy:
         dest: /var/www/html
-        src: /var/lib/jenkins/workspace/Deploy Apache YAML Script 2/style.css
+        src: /var/lib/jenkins/workspace/Deploy Apache YAML Script Prod/style.css
     - name: Copy Yaml script jpg file to Apache web directory
       copy:
         dest: /var/www/html
-        src: /var/lib/jenkins/workspace/Deploy Apache YAML Script 2/Jenkins_YAML_Script.jpg
+        src: /var/lib/jenkins/workspace/Deploy Apache YAML Script Prod/Jenkins_YAML_Script.jpg
     - name: Copy Ansible script jpg file to Apache web directory
       copy:
         dest: /var/www/html
-        src: /var/lib/jenkins/workspace/Deploy Apache YAML Script 2/Dep_App_Ansible_YAML.jpg
+        src: /var/lib/jenkins/workspace/Deploy Apache YAML Script Prod/Dep_App_Ansible_YAML.jpg
